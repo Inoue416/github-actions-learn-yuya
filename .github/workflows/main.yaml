@@ -8,6 +8,8 @@ jobs:
       - uses: actions/setup-node@v1
       - run: mkdir sample
       - run: ls -al
+      - run: cp sample.py ./sample
       - run: cd sample
+      - run: python sample.py
       - run: echo "Hello World!"
 
